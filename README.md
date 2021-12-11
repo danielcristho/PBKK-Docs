@@ -1,2 +1,2 @@
 # Todo-App
-Simple to-do list using Golang
+Simple to-do list using Go
