@@ -24019,11 +24019,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Dante\\Documents\\Github\\pbkk-docs\\dotnet\\assignment\\MauiApp1\\MauiApp1\\MauiApp1.csproj",
+      "projectUniqueName": "C:\\Users\\Dante\\Desktop\\Github\\PBKK-Docs\\dotnet\\assignment\\MauiApp1\\MauiApp1\\MauiApp1.csproj",
       "projectName": "MauiApp1",
-      "projectPath": "C:\\Users\\Dante\\Documents\\Github\\pbkk-docs\\dotnet\\assignment\\MauiApp1\\MauiApp1\\MauiApp1.csproj",
+      "projectPath": "C:\\Users\\Dante\\Desktop\\Github\\PBKK-Docs\\dotnet\\assignment\\MauiApp1\\MauiApp1\\MauiApp1.csproj",
       "packagesPath": "C:\\Users\\Dante\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Dante\\Documents\\Github\\pbkk-docs\\dotnet\\assignment\\MauiApp1\\MauiApp1\\obj\\",
+      "outputPath": "C:\\Users\\Dante\\Desktop\\Github\\PBKK-Docs\\dotnet\\assignment\\MauiApp1\\MauiApp1\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [
