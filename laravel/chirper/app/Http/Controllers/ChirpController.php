@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\Chirp;
 use Illuminate\Http\Request;
+// use Illuminate\Http\Response;
+use Illuminate\View\View;
 
 class ChirpController extends Controller
 {
@@ -12,9 +14,11 @@ class ChirpController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(): View
+
     {
         //
+        return view('chirps.index');
     }
 
     /**
