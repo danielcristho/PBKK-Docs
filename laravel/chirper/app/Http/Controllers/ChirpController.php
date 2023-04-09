@@ -1,10 +1,10 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use Illuminate\Http\RedirectResponse;
 use App\Models\Chirp;
 use Illuminate\Http\Request;
-// use Illuminate\Http\Response;
+use Illuminate\Http\Response;
 use Illuminate\View\View;
 
 class ChirpController extends Controller
@@ -15,10 +15,10 @@ class ChirpController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index(): View
-
     {
-        //
-        return view('chirps.index');
+        return view('chirps.index', [
+            'chirps' => Chirp::with('user')->latest()->get(),
+        ]);
     }
 
     /**
@@ -37,9 +37,13 @@ class ChirpController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(Request $request): RedirectResponse
     {
-        //
+        $validated = $request->validate([
+            'message' => 'required|string|max:255',
+        ]);
+        $request->user()->chirps()->create($validated);
+        return redirect(route('chirps.index'));
     }
 
     /**
