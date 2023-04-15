@@ -9,6 +9,7 @@ Tampilan awal dari aplikasi, dimana ada dua button yaitu `Translete` dan `Call`.
 ![Call](https://github.com/danielcristho/PBKK-Docs/blob/main/dotnet/Phoneword/Assets/Screenshot%20(41).png)
 
 ## Arsitektur Aplikasi
+
 ![Arsitektur](https://github.com/danielcristho/PBKK-Docs/blob/main/dotnet/Phoneword/Assets/phoneword-arch.png)
 
 NB: Tidak bisa menggunakan Android emulator, karena ada kendala ketika dirunning.
