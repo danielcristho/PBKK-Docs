@@ -8,4 +8,4 @@ Untuk UI terbagi menjadi 2 yaitu `StandardTipPage` dan `CustomTipPage`.
 ![Custom-page](https://github.com/danielcristho/PBKK-Docs/blob/main/dotnet/TipCalculator/Assets/Screenshot%20(46).png)
 
 ## Arsitektur
-![Arsitektur]()
+![Arsitektur](https://github.com/danielcristho/PBKK-Docs/blob/main/dotnet/TipCalculator/Assets/TipCalculator.png)
