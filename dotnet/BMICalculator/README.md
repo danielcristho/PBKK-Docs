@@ -41,5 +41,9 @@ Melihat data BMI yang telah disimpan (dalam bentuk list view) (contoh dari perte
   
   Tampilan dari `BMICalculatorPage`
   ![BMI-Page](https://github.com/danielcristho/PBKK-Docs/blob/main/dotnet/BMICalculator/Assets/Screenshot%20(48).png)
+  
+  
+## Arsitektur
+![Arsitektu](https://github.com/danielcristho/PBKK-Docs/blob/main/dotnet/BMICalculator/Assets/BMI-Arch.png)
 
     
