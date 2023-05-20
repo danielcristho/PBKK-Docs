@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BMICalculator.EmployeePage"
+             xmlns:local="clr-namespace:BMICalculator.ViewModels"
+             Title="EmployeePage">
+    <VerticalStackLayout>
+        
+        <Label Text="Enter Employee Name: "></Label>
+        <Entry Text="{Binding EmpName}"></Entry>
+
+        <Label Text="{Binding EmpName}" VerticalOptions="Center" FontSize="Large"></Label>
+        <Button Text="Save" Command="{Binding SaveCommand}"></Button>
+    </VerticalStackLayout>
+</ContentPage>
