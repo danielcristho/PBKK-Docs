@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Laravel Landing</title>
+    <title>My Awesome Links</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
 
     <style>
@@ -32,7 +32,7 @@
             Check out my awesome links
         </h1>
         <p class="subtitle">
-            You can include a little description here.
+            @foreach ($lists as $list)<a href="#" title="{{ $list->title }}" class="tag is-info is-light">{{ $list->title }}</a> @endforeach
         </p>
 
         <section class="links">
@@ -40,6 +40,7 @@
                 <div class="box link">
                     <h3><a href="{{ $link->url }}" target="_blank" title="Visit Link: {{ $link->url }}">{{ $link->description }}</a></h3>
                     <p>{{$link->url}}</p>
+                    <p class="mt-2"><a href="#" title="{{ $list->title }}" class="tag is-info">{{ $link->link_list->title }}</a></p>
                 </div>
             @endforeach
         </section>

@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Models\Link;
+use App\Models\LinkList;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,7 +16,9 @@ use App\Models\Link;
 */
 
 Route::get('/', function () {
+    $links = Link::all()->sortDesc();
     return view('index', [
-        'links' => Link::all()->sortDesc()
+        'links' => $links,
+        'lists' => LinkList::all()
     ]);
 });
