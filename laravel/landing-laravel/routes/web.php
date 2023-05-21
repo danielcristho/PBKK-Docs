@@ -16,9 +16,24 @@ use App\Models\LinkList;
 */
 
 Route::get('/', function () {
-    $links = Link::all()->sortDesc();
-    return view('index', [
+    $links = Link::orderBy('created_at', 'desc')->simplePaginate(4);
+        return view('index', [
         'links' => $links,
         'lists' => LinkList::all()
     ]);
 });
+
+Route::get('/{slug}', function ($slug) {
+    $list = LinkList::where('slug', $slug)->first();
+    if (!$list) {
+        abort(404);
+    }
+
+    return view('index', [
+        'list' => $list,
+        'links' => $list->links,
+        'links' => $list->links()->orderBy('created_at', 'desc')->simplePaginate(4),
+        'lists' => LinkList::all(),
+    ]);
+})->name('link-list');
+
