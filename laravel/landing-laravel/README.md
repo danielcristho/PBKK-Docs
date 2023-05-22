@@ -1,6 +1,6 @@
 # Links Landing Page
 
-Penggunaan Eloquent ORM di Laravel
+Implementasi Eloquent Laravel
 
 Sumber  : [Github](https://github.com/do-community/landing-laravel)
 
