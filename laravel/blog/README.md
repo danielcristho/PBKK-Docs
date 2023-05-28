@@ -49,5 +49,6 @@
 - `laravelcollective/html`: mempermudah penggunaan HTML di Laravel.
 
 
+NB: Belum bisa mendemokan hasil akhir, karena masih ada kendala ketika menampilkan halaman login dan register.
 
 Sumber: https://www.itsolutionstuff.com/post/laravel-8-user-roles-and-permissions-tutorialexample.html
