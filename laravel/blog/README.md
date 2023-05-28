@@ -7,7 +7,7 @@
 
 ## Arsitektur
 
-#### Model:
+#### Models:
 
 [`User.php`](https://github.com/danielcristho/PBKK-Docs/blob/main/laravel/blog/app/Models/User.php):
 - berisi beberapa atribut untuk user seperti `name`, `email`, `password` untuk user. Kemudian ada atribut yang digunakan untuk melindungi data sensitif yaitu `password` dan `remeber_token`.
@@ -18,8 +18,20 @@
 - berisi atribut-atribut seperti `name` dan `detail` yang bersifat mass assignable (disi secara massal).
 - menyediakan akses ke tabel `Product`, sehingga memudahkan operasi CRUD (create, read, update & delete).
 
+#### Controllers
+[`UserController`](https://github.com/danielcristho/PBKK-Docs/blob/main/laravel/blog/app/Http/Controllers/UserController.php)
+- terdiri dari beberapa method yang bertugas untuk mengelola user dalam aplikasi, mulai dari menampilkan user berdasarkan id, menampilkan halaman untuk membuat user baru, mengedit user, memperbarui informasi  atau data user dan menghapus user.
 
-#### Package:
+[`RoleController`](https://github.com/danielcristho/PBKK-Docs/blob/main/laravel/blog/app/Http/Controllers/RoleController.php)
+- terdiri dari beberapa method yang bertanggung jawab untuk mengelola role dan permission dalam aplikasi.
+
+[`ProductController`](https://github.com/danielcristho/PBKK-Docs/blob/main/laravel/blog/app/Http/Controllers/ProductController.php)
+- controller yang bertanggung jawab untuk mengelola data produk dalam aplikasi.
+
+[`HomeController`](https://github.com/danielcristho/PBKK-Docs/blob/main/laravel/blog/app/Http/Controllers/HomeController.php)
+- controller yang bertanggung jawab untuk menangani tampilan pada halaman dashboard.
+
+#### Packages:
 - `laravel/ui`: menyediakan fitur-fitur yang berkaitan dengan keperluan autentikasi.
 - `spatie/laravel-permission`: menyediakan fitur-fitur yang berkaitan dengan manajemen roles dan permissions dalam aplikasi.
 - `laravelcollective/html`: mempermudah penggunaan HTML di Laravel.
