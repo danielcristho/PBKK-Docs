@@ -7,6 +7,11 @@
 
 ## Arsitektur
 
+#### Use case
+
+- User yang memiliki role atau permission admin melakukan operasi CRUD terhadap user-user lainnya.
+- User dapat melakukan operasi CRUD terhadap produk-produk yang ada di aplikasi.
+
 #### Models:
 
 [`User.php`](https://github.com/danielcristho/PBKK-Docs/blob/main/laravel/blog/app/Models/User.php):
@@ -30,6 +35,13 @@
 
 [`HomeController`](https://github.com/danielcristho/PBKK-Docs/blob/main/laravel/blog/app/Http/Controllers/HomeController.php)
 - controller yang bertanggung jawab untuk menangani tampilan pada halaman dashboard.
+
+#### DB
+- Tabel yang ada didalam database:
+    - users, terdiri dari: id, name, email, password, email_verified_at, created_at, updated_at & remember_token
+    - products, terdiri dari: id,name, detail, created_at & updated_at
+    - role_has_permissions, terdiri dari: permission_id, role_id, created_at & updated_at
+    - roles, teridiri dari: id, name, created_at & updated_at
 
 #### Packages:
 - `laravel/ui`: menyediakan fitur-fitur yang berkaitan dengan keperluan autentikasi.
