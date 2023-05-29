@@ -1,0 +1,19 @@
+version: '3.7'
+services:
+  db:
+    image: mysql:8
+    restart: unless-stopped
+    environment:
+      MYSQL_DATABASE: api 
+      MYSQL_ROOT_PASSWORD: secret
+      MYSQL_PASSWORD: dev-password
+      MYSQL_USER: api-user
+    networks:
+      blog:
+        ipv4_address: 11.1.1.254
+
+networks:
+  blog:
+    ipam:
+      config:
+        - subnet: 11.1.1.0/24
